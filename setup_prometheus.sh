@@ -121,7 +121,7 @@ User=$USER
 Group=$GROUP
 Type=simple
 ExecStart=/usr/local/bin/prometheus \
-    --config.file /etc/prometheus/prometheus.yml \
+    --config.file $DIR/prometheus.yml \
     --storage.tsdb.path ${VAR_DIR}/ \
     --web.console.templates=/etc/prometheus/consoles \
     --web.console.libraries=/etc/prometheus/console_lbraries
